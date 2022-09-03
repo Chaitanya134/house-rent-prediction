@@ -1,0 +1,11 @@
+header {
+    @include flex($pos: space-between);
+    padding: 1rem $padding-inline;
+    height: $header-height;
+    box-shadow: 0 4px 10px 6px $bg-secondary;
+
+    .logo {
+        font-weight: bold;
+        cursor: pointer;
+    }
+}

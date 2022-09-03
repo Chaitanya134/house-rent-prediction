@@ -1,0 +1,22 @@
+.hero-section {
+    padding: 2rem $padding-inline;
+    @include flex($pos: space-between);
+    height: calc(100vh - $header-height);
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    p {
+        color: $text-secondary;
+        font-size: 1.1rem;
+    }
+
+    img {
+        height: 250px;
+    }
+
+    button {
+        margin-top: 1.5rem;
+    }
+}
