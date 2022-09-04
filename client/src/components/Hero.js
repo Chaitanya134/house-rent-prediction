@@ -1,6 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Hero = () => {
+
+  async function getData() {
+    const response = await fetch("http://localhost:8000/");
+    const data = await response.json();
+
+    console.log(data);
+  }
+
+  useEffect(()=> {
+    getData();
+  }, [])
+
+
   return (
     <section className='hero-section'>
         <div>
