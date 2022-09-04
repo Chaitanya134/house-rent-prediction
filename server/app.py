@@ -1,11 +1,10 @@
 import os
-from statistics import mode
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 from fastapi import Request
 import pandas as pd
-import pickle
+from lightgbm import Booster
 
 app = FastAPI()
 
@@ -23,7 +22,7 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
-model = pickle.load(open('model.pkl', 'rb'))
+model = Booster(model_file="model.txt")
 
 @app.get("/")
 def index():

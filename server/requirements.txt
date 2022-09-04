@@ -1,4 +1,5 @@
 fastapi==0.82.0
+lightgbm==3.3.2
 pandas==1.3.4
 python-dotenv==0.21.0
 uvicorn==0.12.3

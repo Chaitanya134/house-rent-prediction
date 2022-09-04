@@ -21,7 +21,6 @@
     }
 
     .form-group {
-        // @include flex($pos: null, $gap: 1rem);
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
@@ -72,7 +71,7 @@
     }
 
     .prediction {
-        margin-top: 0.5rem;
+        margin-block: 2rem;
         font-size: 1.5rem;
 
         span {

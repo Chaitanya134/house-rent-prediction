@@ -55,11 +55,11 @@ const HouseForm = () => {
                 </div>
                 <div className='form-group'>
                     <label>Latitude</label>
-                    <input name="latitude" placeholder='Latitude' type="number" />
+                    <input name="latitude" placeholder='Latitude' step="any" type="number" />
                 </div>
                 <div className='form-group'>
                     <label>Longitude</label>
-                    <input name="longitude" placeholder='Longitude' type="number" />
+                    <input name="longitude" placeholder='Longitude' step="any" type="number" />
                 </div>
                 <div className='form-group'>
                     <label>Lease Type</label>
