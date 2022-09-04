@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import HouseForm from "./components/HouseForm";
 import "./scss/style.scss";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
       <Header />
       <Hero />
+      <HouseForm />
     </div>
   );
 }
